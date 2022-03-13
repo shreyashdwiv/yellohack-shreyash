@@ -40,7 +40,7 @@ export default function App() {
   ]
 
   const fetchData = async () => {
-    const res = await fetch("https://randomuser.me/api/?results=500");
+    const res = await fetch("https://randomuser.me/api/?results=5000");
     const data = await res.json();
     setUsers(data.results);
   };
